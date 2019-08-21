@@ -1,2 +1,8 @@
-- name: GitHub Action for PHPUnit
-  uses: pxgamer/phpunit-action@v1.0.0
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+    - name: GitHub Action for PHPUnit
+      uses: pxgamer/phpunit-action@v1.0.0
