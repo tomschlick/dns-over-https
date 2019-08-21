@@ -5,6 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
+      - uses: veggiemonk/skip-commit@1.0.0
       - uses: pxgamer/composer-action@master
         with:
           command: install --optimize-autoloader --prefer-dist
