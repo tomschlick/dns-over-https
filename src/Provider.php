@@ -1,8 +1,6 @@
 <?php
 
-
 namespace TomSchlick\DoH;
-
 
 class Provider
 {
