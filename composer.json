@@ -1,0 +1,33 @@
+{
+    "name": "tomschlick/dns-over-https",
+    "description": "DoH (DNS over HTTPS) Client for PHP / Laravel with support for many providers",
+    "type": "library",
+    "require": {
+        "php": "^7.2",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tom Schlick",
+            "email": "tom@schlick.email"
+        }
+    ],
+    "minimum-stability": "stable",
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "TomSchlick\\DoH\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TomSchlick\\DoH\\Tests\\": "tests/"
+        }
+    }
+}
