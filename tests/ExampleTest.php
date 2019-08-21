@@ -1,6 +1,6 @@
-<?php
+<?php declare(strict_types=1);
 
-namespace Spatie\Skeleton\Tests;
+namespace TomSchlick\DoH\Tests;
 
 use PHPUnit\Framework\TestCase;
 
