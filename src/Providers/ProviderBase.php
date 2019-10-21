@@ -2,6 +2,7 @@
 
 namespace TomSchlick\DoH\Providers;
 
+use Exception;
 use GuzzleHttp\Client as GuzzleClient;
 use TomSchlick\DoH\QueryReponse;
 use TomSchlick\DoH\RecordType;
@@ -11,6 +12,13 @@ abstract class ProviderBase
 {
     abstract public function endpoints() : array;
 
+    /**
+     * @param string $name
+     * @param int $type
+     *
+     * @return \TomSchlick\DoH\QueryReponse
+     * @throws \BenSampo\Enum\Exceptions\InvalidEnumMemberException
+     */
     public function fetch(string $name, int $type) : QueryReponse
     {
         $recordType = new RecordType($type);
@@ -28,9 +36,13 @@ abstract class ProviderBase
             $response = $this->getHttpClient()->get($url, $options);
 
             if($response->getStatusCode() == 200) {
-                return new QueryReponse($response->getBody());
+                return new QueryReponse(
+                    json_decode($response->getBody()->getContents(), true)
+                );
             }
         }
+
+        throw new Exception("Couldn't reach any of the supplied endpoints.");
     }
 
     public function getHttpClient()
