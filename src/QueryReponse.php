@@ -14,16 +14,21 @@ class QueryReponse
     /**
      * QueryReponse constructor.
      *
-     * @param array|null $response
+     * @param array $response
      */
-    public function __construct(object $response)
+    public function __construct(array $response)
     {
-        $this->response = json_decode($response->getContents(), true);
+        $this->response = $response;
     }
 
     /**
      * @return array
      */
+    public function getAnswer() : array
+    {
+        return $this->response['Answer'];
+    }
+
     public function getQuestion() : array
     {
         return $this->response['Question'];
@@ -37,5 +42,10 @@ class QueryReponse
     public function wasTruncated() : bool
     {
         return $this->response['TC'];
+    }
+
+    public function wasSuccessful() : bool
+    {
+        return $this->getStatus()->is(StatusType::NO_ERROR);
     }
 }
