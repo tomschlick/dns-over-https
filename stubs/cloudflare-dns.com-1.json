@@ -1,0 +1,35 @@
+{
+  "Status": 0,
+  "TC": false,
+  "RD": true,
+  "RA": true,
+  "AD": true,
+  "CD": false,
+  "Question": [
+    {
+      "name": "cloudflare-dns.com.",
+      "type": 1
+    }
+  ],
+  "Answer": [
+    {
+      "name": "cloudflare-dns.com.",
+      "type": 1,
+      "TTL": 272,
+      "data": "104.16.249.249"
+    },
+    {
+      "name": "cloudflare-dns.com.",
+      "type": 1,
+      "TTL": 272,
+      "data": "104.16.248.249"
+    },
+    {
+      "name": "cloudflare-dns.com.",
+      "type": 46,
+      "TTL": 272,
+      "data": "a 13 2 300 1571708860 1571528860 34505 cloudflare-dns.com. zc9yoaIscHYokPt66VO/ZfMfcCtpnoaks/yE1/aaZJNRSMFFmm3aCKNgjsog3YUQNFPyQl417J2uJtCOFifatA=="
+    }
+  ],
+  "Additional": []
+}

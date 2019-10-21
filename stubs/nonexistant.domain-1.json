@@ -1,0 +1,53 @@
+{
+  "Status": 3,
+  "TC": false,
+  "RD": true,
+  "RA": true,
+  "AD": true,
+  "CD": false,
+  "Question": [
+    {
+      "name": "nonexistant.domain.",
+      "type": 1
+    }
+  ],
+  "Authority": [
+    {
+      "name": ".",
+      "type": 6,
+      "TTL": 86398,
+      "data": "a.root-servers.net. nstld.verisign-grs.com. 2019102001 1800 900 604800 86400"
+    },
+    {
+      "name": ".",
+      "type": 46,
+      "TTL": 86398,
+      "data": "soa 8 0 86400 1572714000 1571587200 22545 . OH3Bn3I2edI+plzr5ZRS43Y8C4odoq2eApiuJ1zQ53z3RGOboYcdE2qv21KMad4JVlqAlcyTu76KEt5lvRZE5AxOVhuGQdhxRC+oSXl4uZiOOZ0LugfpLXTa0j0/eDZ8/LE0tUrv4nHaOOUqcsONEq5S+VIjOUYOFQFeNQEbWgQxFtb9yYEdvTnFnYi5FzBR0jY/MKmm08i/RZJ+RV7Y4YxjRuBGF/koAXlVF0WNVanCO7aPRAi0fBde4dT+Vvgknn7ZIp5e84FBMK0zH2H+6KxbiBkJO1bWmsDPyI/fRip7HME7BBu3tfEe5OwfTeDdsu1gSgaio1MBfY2gQaLrXg=="
+    },
+    {
+      "name": ".",
+      "type": 47,
+      "TTL": 86398,
+      "data": "aaa. NS SOA RRSIG NSEC DNSKEY"
+    },
+    {
+      "name": ".",
+      "type": 46,
+      "TTL": 86398,
+      "data": "nsec 8 0 86400 1572714000 1571587200 22545 . Wf2A525R8upLUeRfgZgHbOIesxtENTIh0oQs7Z9ZO5p/djjtGPZiPfct27dwt8V5NT7B2RyWYzj4jaGXpwDidq2t3Ix75foVQhy/tihM5yeMj5fvYcqPB4hoOClsvPEcUfqW3BZgw9ih1OCXBi7sjJ0UXwu+ovXAGsQuoPYYtAoZLMQF4QIzxn0dx6LSaFmgHSs41JGb569693OzC7g0b6djdJHu9dJvuEXhDJAyPETGeFpwf8M9a5LX6cClhnVTR/rTjD+cn/vlRGoSs4PKehtfmSou6BAfdipisviFy9pkSYpnSfzQafHPZfX2sjibsttyDEnHtd034g9UunZ1Fw=="
+    },
+    {
+      "name": "dog.",
+      "type": 47,
+      "TTL": 79425,
+      "data": "domains. NS DS RRSIG NSEC"
+    },
+    {
+      "name": "dog.",
+      "type": 46,
+      "TTL": 79425,
+      "data": "nsec 8 1 86400 1572714000 1571587200 22545 . cctQb3Z4+3u6sz0TngqxseluCoa4PpqHL3MBeUBVI/2Ci12NIvPoZeVQ6Q58m7+Ze1sw1qViqSGN5IwMhiyVpxzWsFKuwDohImUbK5XUQYFzqOXVJmTMYeN7sxQG+jBNo8QXqEchqQKrSTRmKPIhaDjOlzPmx3mndVqE/npNaFlDC2VM3NJUpLA14yVubl3tz2rLYYQp64+26sPIRveKA8FWaDyTnLA3vB+L7oZcaqT3QV01MHPSvkaZc97zvLjX63KR1utJaCOf3+LcFhEMbeDEfDdco+0HuTDe/5ILtapDzyGiua05i8066wSVg03KLgWXeAAVuuEAceH8k6EICA=="
+    }
+  ],
+  "Additional": []
+}

@@ -1,0 +1,48 @@
+{
+  "Status": 0,
+  "TC": false,
+  "RD": true,
+  "RA": true,
+  "AD": false,
+  "CD": false,
+  "Question": [
+    {
+      "name": "google.com.",
+      "type": 15
+    }
+  ],
+  "Answer": [
+    {
+      "name": "google.com.",
+      "type": 15,
+      "TTL": 599,
+      "data": "20 alt1.aspmx.l.google.com."
+    },
+    {
+      "name": "google.com.",
+      "type": 15,
+      "TTL": 599,
+      "data": "40 alt3.aspmx.l.google.com."
+    },
+    {
+      "name": "google.com.",
+      "type": 15,
+      "TTL": 599,
+      "data": "50 alt4.aspmx.l.google.com."
+    },
+    {
+      "name": "google.com.",
+      "type": 15,
+      "TTL": 599,
+      "data": "30 alt2.aspmx.l.google.com."
+    },
+    {
+      "name": "google.com.",
+      "type": 15,
+      "TTL": 599,
+      "data": "10 aspmx.l.google.com."
+    }
+  ],
+  "Additional": [],
+  "Comment": "Response from 2001:4860:4802:38::a."
+}
