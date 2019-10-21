@@ -4,12 +4,12 @@ declare(strict_types=1);
 
 namespace TomSchlick\DoH\Tests;
 
-use PHPUnit\Framework\TestCase;
-use TomSchlick\DoH\DnsOverHttps;
-use TomSchlick\DoH\Providers\Cloudflare;
-use TomSchlick\DoH\Providers\Google;
 use TomSchlick\DoH\RecordType;
 use TomSchlick\DoH\StatusType;
+use PHPUnit\Framework\TestCase;
+use TomSchlick\DoH\DnsOverHttps;
+use TomSchlick\DoH\Providers\Google;
+use TomSchlick\DoH\Providers\Cloudflare;
 
 class ExampleTest extends TestCase
 {
@@ -32,5 +32,4 @@ class ExampleTest extends TestCase
 
         $this->assertEquals(StatusType::NO_ERROR, $result->getStatus()->value);
     }
-
 }

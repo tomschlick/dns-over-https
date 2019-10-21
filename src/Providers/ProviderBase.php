@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace TomSchlick\DoH\Providers;
 
@@ -27,10 +29,10 @@ abstract class ProviderBase
             'headers' => ['accept' => 'application/dns-json'],
         ];
 
-        foreach($this->endpoints() as $endpoint) {
-            $url = $endpoint . '?' . build_query([
+        foreach ($this->endpoints() as $endpoint) {
+            $url = $endpoint.'?'.build_query([
                     'name' => $name,
-                    'type' => $recordType->description
+                    'type' => $recordType->description,
                 ]);
 
             $response = $this->getHttpClient()->get($url, $options);
