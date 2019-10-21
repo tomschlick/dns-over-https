@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace TomSchlick\DoH\Providers;
 
 use Exception;
-use GuzzleHttp\Client as GuzzleClient;
-use TomSchlick\DoH\QueryReponse;
 use TomSchlick\DoH\RecordType;
+use TomSchlick\DoH\QueryReponse;
+use GuzzleHttp\Client as GuzzleClient;
 use function GuzzleHttp\Psr7\build_query;
 
 abstract class ProviderBase
@@ -37,7 +37,7 @@ abstract class ProviderBase
 
             $response = $this->getHttpClient()->get($url, $options);
 
-            if($response->getStatusCode() == 200) {
+            if ($response->getStatusCode() == 200) {
                 return new QueryReponse(
                     json_decode($response->getBody()->getContents(), true)
                 );
