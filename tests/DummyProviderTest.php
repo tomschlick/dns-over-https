@@ -2,11 +2,11 @@
 
 namespace TomSchlick\DoH\Tests;
 
+use TomSchlick\DoH\RecordType;
+use TomSchlick\DoH\StatusType;
 use PHPUnit\Framework\TestCase;
 use TomSchlick\DoH\DnsOverHttps;
 use TomSchlick\DoH\Providers\Dummy;
-use TomSchlick\DoH\RecordType;
-use TomSchlick\DoH\StatusType;
 
 class DummyProviderTest extends TestCase
 {

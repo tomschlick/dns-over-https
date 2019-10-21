@@ -17,7 +17,7 @@ class Dummy extends ProviderBase
 
     public function fetch(string $name, int $type): QueryReponse
     {
-        $file = realpath(__DIR__ . "/../../stubs/$name-$type.json");
+        $file = realpath(__DIR__."/../../stubs/$name-$type.json");
 
         $contents = json_decode(file_get_contents($file), true);
 
